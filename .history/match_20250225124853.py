@@ -1,0 +1,1 @@
+Write a python program that uses functions and that uses a “match case” to print the day of the week based on the user's input e.g if the user enters 1, it should print “The day is Monday” etc.
