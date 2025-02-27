@@ -24,7 +24,6 @@ def main():
     except ValueError:
         print("Please enter a valid number.")
     except:
-        print("An error occurred.")
 
 if __name__ == "__main__":
     main()

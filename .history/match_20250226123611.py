@@ -23,7 +23,7 @@ def main():
         print(get_day_of_week(day_number))
     except ValueError:
         print("Please enter a valid number.")
-    except:
+    except St:
         print("An error occurred.")
 
 if __name__ == "__main__":
