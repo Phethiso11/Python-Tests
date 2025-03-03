@@ -16,8 +16,8 @@ def deposit_money():
             balance += amount
             transaction_history.append(f"Deposited ${amount:.2f}")
             print("Deposit successful.")
-        else:
-            print("Invalid deposit amount. Please enter a positive value.")
+        else:print("I
+            nvalid deposit amount. Please enter a positive value.")
     except ValueError:
         print("Invalid input. Please enter a numerical value.")
 
@@ -58,18 +58,18 @@ def main():
         print("4. View Transaction History")
         print("5. Exit")
 
-        choice = int(input("Enter your choice (1-5): "))
+        choice = input("Enter your choice (1-5): ")
 
         match choice:
-            case 1:
+            case '1':
                 check_balance()
-            case 2:
+            case '2':
                 deposit_money()
-            case 3:
+            case '3':
                 withdraw_money()
-            case 4:
+            case '4':
                 view_transaction_history()
-            case 5:
+            case '5':
                 print("Thank you for banking with us!")
                 break
             case _:

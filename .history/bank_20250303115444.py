@@ -67,9 +67,9 @@ def main():
                 deposit_money()
             case 3:
                 withdraw_money()
-            case 4:
+            case '4':
                 view_transaction_history()
-            case 5:
+            case '5':
                 print("Thank you for banking with us!")
                 break
             case _:
