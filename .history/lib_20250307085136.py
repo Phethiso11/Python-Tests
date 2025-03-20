@@ -1,5 +1,3 @@
-from tabulate import tabulate
-
 class Book:
     def __init__(self, book_title, author, book_id):
         self.book_title = book_title
@@ -77,7 +75,7 @@ class Library:
             print("Invalid member ID or book ID.")
 
     def return_book(self, member_id, book_id):
-        if member_id in self.members and book_id in self.books:
+        if member_id in self.members and book_id in self.books:``
             member = self.members[member_id]
             book = self.books[book_id]
             if book_id in member.borrowed_books:
@@ -92,20 +90,14 @@ class Library:
         if not self.books:
             print("No books in the library.")
         else:
-            table = []
             for book in self.books.values():
-                availability = "Available" if book.is_available else "Not Available"
-                table.append([book.book_title, book.author, availability])
-            print(tabulate(table, headers=["TITLE", "AUTHOR", "AVAILABILITY"], tablefmt="grid"))
+                book.display_details()
 
     def display_all_members(self):
         if not self.members:
             print("No members registered.")
-        else:
-            table = []
-            for member in self.members.values():
-                table.append([member.member_name, member.member_id])
-            print(tabulate(table, headers=["Member Name", "Member ID"], tablefmt="grid"))
+        for member in self.members.values():
+            print(f"Member Name: {member.member_name}, Member ID: {member.member_id}")
 
 def main():
  try:

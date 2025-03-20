@@ -96,7 +96,7 @@ class Library:
             for book in self.books.values():
                 availability = "Available" if book.is_available else "Not Available"
                 table.append([book.book_title, book.author, availability])
-            print(tabulate(table, headers=["TITLE", "AUTHOR", "AVAILABILITY"], tablefmt="grid"))
+            print(tabulate(table, headers=["Title", "Author", "Availability"], tablefmt="grid"))
 
     def display_all_members(self):
         if not self.members:
@@ -105,7 +105,7 @@ class Library:
             table = []
             for member in self.members.values():
                 table.append([member.member_name, member.member_id])
-            print(tabulate(table, headers=["Member Name", "Member ID"], tablefmt="grid"))
+            print(tabulate(table, headers=[bold"Member Name", "Member ID"], tablefmt="grid"))
 
 def main():
  try:
