@@ -1,3 +1,4 @@
+# Create a dictionary with fruit names as keys and their prices as values
 fruits = {
     "apple": 3.5,
     "banana": 1.2,

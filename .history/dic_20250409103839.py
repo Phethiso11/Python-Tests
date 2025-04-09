@@ -1,3 +1,4 @@
+
 fruits = {
     "apple": 3.5,
     "banana": 1.2,

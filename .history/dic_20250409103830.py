@@ -1,3 +1,4 @@
+# Create a dictionary with fruit names as keys and their prices as values
 fruits = {
     "apple": 3.5,
     "banana": 1.2,
@@ -6,6 +7,7 @@ fruits = {
     "elderberry": 7.0
 }
 
+# Convert the dictionary keys into a list of fruit names
 fruit_names = list(fruits.keys())
 print("List of fruit names:", fruit_names)
 

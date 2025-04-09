@@ -2,6 +2,7 @@ fruits = {
     "apple": 3.5,
     "banana": 1.2,
     "cherry": 5.0,
+    mango": 2.5,
     "date": 3.5,
     "elderberry": 7.0
 }
